@@ -1,5 +1,0 @@
-package com.ecommerce.productcategory.service.impl;
-
-public interface ProductCategoryService {
-
-}

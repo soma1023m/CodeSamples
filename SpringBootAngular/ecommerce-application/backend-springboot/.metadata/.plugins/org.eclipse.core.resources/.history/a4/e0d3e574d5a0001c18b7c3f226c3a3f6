@@ -1,5 +1,0 @@
-package com.ecommerce.productcategory.repository;
-
-public interface ProductCategoryRepository extends JpaRepository<ProductCategory,Long> {
-
-}
