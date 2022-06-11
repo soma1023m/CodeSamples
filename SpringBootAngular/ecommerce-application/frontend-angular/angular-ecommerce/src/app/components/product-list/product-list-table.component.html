@@ -1,0 +1,33 @@
+<table calss="table">
+    <thead class="thead-dark">
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Unit Price</th>
+            <th>Units in Stock</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody *ngIf='products.length > 0' >
+        <tr *ngFor='let tempProduct of products'>            
+            <td>
+                <img src="{{tempProduct?.imageUrl}}" height="60"/>
+                
+            </td>
+            <td>
+                {{tempProduct?.name}}
+            </td>
+            <td>
+                {{tempProduct?.unitPrice}}
+            </td>
+            <td>
+                {{tempProduct?.unitsInStock}}
+            </td>
+            <td>
+                {{tempProduct?.category | json}}
+            </td>
+        </tr>
+
+    </tbody>
+
+</table>

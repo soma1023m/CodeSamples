@@ -1,0 +1,5 @@
+package com.ecommerce.productcategory.model;
+
+public class ProductCategory {
+
+}

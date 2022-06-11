@@ -1,0 +1,34 @@
+package com.ecommerce.product.service;
+
+public interface ProcuctService {
+	/**
+	 * @param employee the employee to be added
+	 * @return the employee that has been added
+	 * @apiNote creates a new employee
+	 */
+	Employee saveEmployee(Employee employee);
+	/**
+	 * @return List of Employee Objects
+	 * @apiNote returns all the employees
+	 */
+	List<Employee> getAllEmployees();
+	/**
+	 * @param id
+	 * @return
+	 * @apiNote Returns Employee object if found else throws ResourceNotFoundException 
+	 */
+	Employee getEmployeeById(long id);
+	/**
+	 * @param employee contains fiels to be updated
+	 * @param id the employee id
+	 * @return the updated employee
+	 * @apiNote Checks with id if employee present.Returns updated employee if present else throws ResourceNotFoundException
+	 */
+	Employee updateEmployee(Employee employee,long id);
+	/**
+	 * @param id the employee id
+	 * @apiNote Checks with id if employee present.Deletes employee if present else throws ResourceNotFoundException
+	 */
+	void deleteEmployee(long id);
+
+}

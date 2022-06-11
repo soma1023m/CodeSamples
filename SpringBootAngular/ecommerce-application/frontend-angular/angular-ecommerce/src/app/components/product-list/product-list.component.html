@@ -1,0 +1,8 @@
+<div *ngIf='products.length > 0'>
+    <p *ngFor='let tempProduct of products'>
+   
+        {{tempProduct?.name}}:{{tempProduct?.unitPrice}}:{{tempProduct?.category | json}}
+   
+    </p>
+
+</div>

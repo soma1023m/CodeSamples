@@ -1,0 +1,36 @@
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>Sales Employee Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>SalesQuota</th>
+            <th>Met Sales Quota</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let tempSalesPerson of salesPersonList" [ngClass]="{'highlight': tempSalesPerson._salesQuota>=20000}">
+            <td>
+                {{tempSalesPerson._id}}
+            </td>
+            <td>
+                {{tempSalesPerson._firstName}}
+            </td>
+            <td>
+                {{tempSalesPerson._lastName}}
+            </td>
+            <td>
+                {{tempSalesPerson._email}}
+            </td>
+            <td>
+                {{tempSalesPerson._salesQuota}}
+            </td>
+            <td>
+                <div *ngIf="tempSalesPerson._salesQuota>=20000;else myElseBlock">Yes</div>
+                <ng-template #myElseBlock>No</ng-template>
+            </td>
+        </tr>
+    </tbody>
+</table>
