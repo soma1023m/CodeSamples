@@ -1,3 +1,3 @@
 # Quick References
 
-[Lambda](Java8Samples/src/main/java/mySamplejava8/lambda/lambda.md)
+[Lambda](Java8Examples/src/main/java/mySamplejava8/lambda/lambda.md)
