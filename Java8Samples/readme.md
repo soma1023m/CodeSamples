@@ -1,1 +1,3 @@
-Contains sample java programs featuring new Java8 features
+# Quick References
+
+[Lambda](Java8Samples/src/main/java/mySamplejava8/lambda/lambda.md)
