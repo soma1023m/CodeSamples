@@ -1,9 +1,3 @@
-# Author: Nirmallya Mukherjee
-#
-# This program is provided as part of the training and does not carry any warranty
-# Using this code in any other context will be at your own risk.
-#
-
 #The below lists will have a one to one relationships. At a later point in time these can be read from a CSV as well
 canteens = ["canteen1", "canteen2", "canteen3", "canteen4", "canteen5", "canteen6"]   #Will contain the name of the canteens
 price_range = [(10,20), (65,200), (20,40), (15,25), (5,35)]  #will contain the min and max price range of each of the canteens as a tuple

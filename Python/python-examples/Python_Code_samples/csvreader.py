@@ -1,8 +1,3 @@
-# Author: Nirmallya Mukherjee
-#
-# This program is provided as part of the training and does not carry any warranty
-# Using this code in any other context will be at your own risk.
-#
 
 import csv
 
